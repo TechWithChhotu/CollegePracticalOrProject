@@ -1,0 +1,17 @@
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\bin\Debug\net6.0-windows\TicTocToeGame.exe
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\bin\Debug\net6.0-windows\TicTocToeGame.deps.json
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\bin\Debug\net6.0-windows\TicTocToeGame.runtimeconfig.json
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\bin\Debug\net6.0-windows\TicTocToeGame.dll
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\bin\Debug\net6.0-windows\TicTocToeGame.pdb
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.Form1.resources
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.vbproj.GenerateResource.cache
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.AssemblyInfoInputs.cache
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.AssemblyInfo.vb
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.vbproj.CoreCompileInputs.cache
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.dll
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\refint\TicTocToeGame.dll
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.pdb
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.genruntimeconfig.cache
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\ref\TicTocToeGame.dll
+C:\Users\chhot\Desktop\Project-BCA(B)\TicTocToeGame\TicTocToeGame\obj\Debug\net6.0-windows\TicTocToeGame.GamePage.resources
