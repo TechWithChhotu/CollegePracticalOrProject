@@ -8,10 +8,11 @@ public class Question
     public char CorrectAnswer { get; set; }
     public char userInput { get; set; }
 
-    public Question(string text, List<string> options, char correctAnswer)
+    public Question(string text, List<string> options, char correctAnswer,char userAnswere)
     {
         Text = text;
         Options = options;
         CorrectAnswer = correctAnswer;
+        userInput = userAnswere;
     }
 }
