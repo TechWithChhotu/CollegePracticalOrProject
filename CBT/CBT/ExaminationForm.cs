@@ -9,7 +9,7 @@ namespace CBT
         int PreviousQuestionN = 0;
 
         List<Question> questions = new List<Question>();
-        private userDetails userDetails= new userDetails();
+        private userDetails userDetails = new userDetails();
 
         public ExaminationForm()
         {
@@ -22,11 +22,12 @@ namespace CBT
             InitializeComponent();
             SetAllQuestions();
             this.userDetails = userDetails;
+            currentUserName.Text=userDetails.Name.ToString();
             this.Text = null;
         }
 
         //-----------> For Timer <----------
-        System.Timers.Timer timer1= new System.Timers.Timer();
+        System.Timers.Timer timer1 = new System.Timers.Timer();
         int m = 19, s = 59;
 
         //==============>> Form Load <<=============
@@ -107,9 +108,6 @@ namespace CBT
 
         //====================>>ALl Helper Methods Are Above<<==================
 
-
-
-
         //------------->>For Option A<<-------------
         private void Option_A_CheckedChanged(object sender, EventArgs e)
         {
@@ -134,9 +132,6 @@ namespace CBT
             questions[Count].userInput = 'D';
         }
 
-
-
-
         //------------->Next,Previous,Submit<<-----------
         private void Next_btn_Click(object sender, EventArgs e)
         {
@@ -147,6 +142,7 @@ namespace CBT
 
             unSelectAllOption();
             Previous_btn.BackColor = Color.Indigo;
+
             if (Count < 9)
             {
                 Count++;
@@ -192,7 +188,6 @@ namespace CBT
                 ResultForm.ShowDialog();
             }
         }
-
 
         //=============>>Set All Questions<<=============
         private void SetAllQuestions()
@@ -306,7 +301,6 @@ namespace CBT
             questions.Add(q10);
         }
 
-
         //------------->>Timer<<--------------
         private void OnTimeEvent(object? sender, ElapsedEventArgs e)
         {
@@ -315,7 +309,7 @@ namespace CBT
                 Timer_lbl.BeginInvoke(new Action(() =>
                 {
                     s -= 1;
-                    if (s == 0)
+                    if (s == 0 && m > 0)
                     {
                         s = 59;
                         m -= 1;
@@ -323,18 +317,30 @@ namespace CBT
                     if (m == 0 && s == 0)
                     {
                         MessageBox.Show(this, "Examination Time Out");
+                        int temp = 0;
+                        foreach (var element in questions)
+                        {
+                            if (element.CorrectAnswer == element.userInput)
+                            {
+                                temp++;
+                            }
+                        }
+
+                        userDetails.TotalCorrect = temp;
+                        ResultForm ResultForm = new ResultForm(userDetails);
+                        this.Hide();
+                        ResultForm.ShowDialog();
+
+
                     }
                     Timer_lbl.Text = $"{m:00}:{s:00}";
                 }));
             }
         }
 
-
-
         private void Q1_btn_Click(object sender, EventArgs e)
         {
             Count = 0;
-            // GetCurrentQuestions();
 
             if (questions[PreviousQuestionN].userInput != ' ' && getCurrentColorOfQuestionBtn(PreviousQuestionN) == Color.WhiteSmoke)
             {
@@ -450,22 +456,22 @@ namespace CBT
             GetCurrentQuestions();
             PreviousQuestionN = 9;
         }
-      
+
         private void QuestionInDoubtBtn_Click(object sender, EventArgs e)
         {
             BtnColoringBg(Color.Red);
         }
-       
+
         private void QuestionInExceptionBtn_Click(object sender, EventArgs e)
         {
             BtnColoringBg(Color.Yellow);
         }
-      
+
         private void QuestionInConfirmBtn_Click(object sender, EventArgs e)
         {
             BtnColoringBg(Color.Green);
         }
-       
+
         private void BtnColoringBg(Color bg)
         {
             switch (Count)
@@ -557,7 +563,6 @@ namespace CBT
 
         private Color getCurrentColorOfQuestionBtn(int PreviousQN)
         {
-
             Button[] questionButtons = { Q1_btn, Q2_btn, Q3_btn, Q4_btn, Q5_btn, Q6_btn, Q7_btn, Q8_btn, Q9_btn, Q10_btn };
 
             if (PreviousQN >= 0 && PreviousQN < questionButtons.Length)

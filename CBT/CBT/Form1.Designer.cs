@@ -63,7 +63,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Arial Rounded MT Bold", 26F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(235, 9);
+            label1.Location = new Point(251, 9);
             label1.Name = "label1";
             label1.Size = new Size(334, 60);
             label1.TabIndex = 1;
@@ -89,7 +89,6 @@
             Form1_Name_TextBox.PlaceholderText = "  Name";
             Form1_Name_TextBox.Size = new Size(404, 45);
             Form1_Name_TextBox.TabIndex = 3;
-            Form1_Name_TextBox.TextChanged += Form1_Name_TextChanged;
             // 
             // label3
             // 
@@ -122,7 +121,6 @@
             Form1_FatherName_TextBox.PlaceholderText = "  Father`s Name";
             Form1_FatherName_TextBox.Size = new Size(404, 50);
             Form1_FatherName_TextBox.TabIndex = 5;
-            Form1_FatherName_TextBox.TextChanged += Form1_FatherName_TextBox_TextChanged;
             // 
             // Form1_RollNumber_TextBox
             // 
@@ -133,7 +131,6 @@
             Form1_RollNumber_TextBox.PlaceholderText = "  Roll Number";
             Form1_RollNumber_TextBox.Size = new Size(404, 50);
             Form1_RollNumber_TextBox.TabIndex = 7;
-            Form1_RollNumber_TextBox.TextChanged += Form1_RollNumber_TextBox_TextChanged;
             // 
             // label5
             // 
@@ -155,7 +152,6 @@
             Form1_Aadhar_TextBox.PlaceholderText = "  Aadhar Number";
             Form1_Aadhar_TextBox.Size = new Size(404, 50);
             Form1_Aadhar_TextBox.TabIndex = 9;
-            Form1_Aadhar_TextBox.TextChanged += Form1_Aadhar_TextBox_TextChanged;
             // 
             // label6
             // 
@@ -177,7 +173,6 @@
             Form1_Email_TextBox.PlaceholderText = "  Email";
             Form1_Email_TextBox.Size = new Size(404, 50);
             Form1_Email_TextBox.TabIndex = 11;
-            Form1_Email_TextBox.TextChanged += Form1_Email_TextBox_TextChanged;
             // 
             // Form1_Password_TextBox
             // 
@@ -189,7 +184,6 @@
             Form1_Password_TextBox.PlaceholderText = "  Password";
             Form1_Password_TextBox.Size = new Size(404, 50);
             Form1_Password_TextBox.TabIndex = 13;
-            Form1_Password_TextBox.TextChanged += Form1_Password_TextBox_TextChanged;
             // 
             // label7
             // 
@@ -206,7 +200,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.Yellow;
             ClientSize = new Size(869, 630);
             Controls.Add(Form1_Password_TextBox);
             Controls.Add(label7);
@@ -224,7 +218,8 @@
             Controls.Add(StartExamination_btn);
             ForeColor = SystemColors.ControlText;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

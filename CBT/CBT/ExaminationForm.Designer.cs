@@ -51,6 +51,7 @@
             QuestionInDoubtBtn = new Button();
             QuestionInExceptionBtn = new Button();
             QuestionInConfirmBtn = new Button();
+            currentUserName = new Label();
             SuspendLayout();
             // 
             // Question_lbl
@@ -58,7 +59,7 @@
             Question_lbl.AllowDrop = true;
             Question_lbl.AutoSize = true;
             Question_lbl.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            Question_lbl.ForeColor = SystemColors.Control;
+            Question_lbl.ForeColor = Color.Black;
             Question_lbl.Location = new Point(71, 79);
             Question_lbl.Name = "Question_lbl";
             Question_lbl.Size = new Size(403, 42);
@@ -69,7 +70,7 @@
             // 
             QuestionN_lbl.AutoSize = true;
             QuestionN_lbl.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            QuestionN_lbl.ForeColor = SystemColors.Control;
+            QuestionN_lbl.ForeColor = Color.Black;
             QuestionN_lbl.Location = new Point(26, 79);
             QuestionN_lbl.Name = "QuestionN_lbl";
             QuestionN_lbl.Size = new Size(50, 42);
@@ -94,7 +95,7 @@
             Option_A.AutoSize = true;
             Option_A.Cursor = Cursors.Hand;
             Option_A.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            Option_A.ForeColor = SystemColors.ActiveBorder;
+            Option_A.ForeColor = Color.Black;
             Option_A.Location = new Point(71, 139);
             Option_A.Name = "Option_A";
             Option_A.Size = new Size(240, 41);
@@ -108,7 +109,7 @@
             Option_B.AutoSize = true;
             Option_B.Cursor = Cursors.Hand;
             Option_B.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            Option_B.ForeColor = SystemColors.ActiveBorder;
+            Option_B.ForeColor = Color.Black;
             Option_B.Location = new Point(71, 200);
             Option_B.Name = "Option_B";
             Option_B.Size = new Size(240, 41);
@@ -122,7 +123,7 @@
             Option_D.AutoSize = true;
             Option_D.Cursor = Cursors.Hand;
             Option_D.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            Option_D.ForeColor = SystemColors.ActiveBorder;
+            Option_D.ForeColor = Color.Black;
             Option_D.Location = new Point(71, 325);
             Option_D.Name = "Option_D";
             Option_D.Size = new Size(240, 41);
@@ -136,7 +137,7 @@
             Option_C.AutoSize = true;
             Option_C.Cursor = Cursors.Hand;
             Option_C.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            Option_C.ForeColor = SystemColors.ActiveBorder;
+            Option_C.ForeColor = Color.Black;
             Option_C.Location = new Point(71, 260);
             Option_C.Name = "Option_C";
             Option_C.Size = new Size(240, 41);
@@ -147,6 +148,7 @@
             // 
             // Previous_btn
             // 
+            Previous_btn.Anchor = AnchorStyles.None;
             Previous_btn.BackColor = Color.FromArgb(70, 47, 204);
             Previous_btn.Cursor = Cursors.Hand;
             Previous_btn.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
@@ -161,6 +163,7 @@
             // 
             // Next_btn
             // 
+            Next_btn.Anchor = AnchorStyles.None;
             Next_btn.BackColor = Color.FromArgb(70, 47, 204);
             Next_btn.Cursor = Cursors.Hand;
             Next_btn.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
@@ -175,6 +178,7 @@
             // 
             // Submit_btn
             // 
+            Submit_btn.Anchor = AnchorStyles.None;
             Submit_btn.BackColor = Color.ForestGreen;
             Submit_btn.Cursor = Cursors.Hand;
             Submit_btn.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
@@ -329,6 +333,7 @@
             // 
             // QuestionInDoubtBtn
             // 
+            QuestionInDoubtBtn.Anchor = AnchorStyles.None;
             QuestionInDoubtBtn.BackColor = Color.Red;
             QuestionInDoubtBtn.Cursor = Cursors.Hand;
             QuestionInDoubtBtn.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
@@ -343,6 +348,7 @@
             // 
             // QuestionInExceptionBtn
             // 
+            QuestionInExceptionBtn.Anchor = AnchorStyles.None;
             QuestionInExceptionBtn.BackColor = Color.Yellow;
             QuestionInExceptionBtn.Cursor = Cursors.Hand;
             QuestionInExceptionBtn.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
@@ -357,6 +363,7 @@
             // 
             // QuestionInConfirmBtn
             // 
+            QuestionInConfirmBtn.Anchor = AnchorStyles.None;
             QuestionInConfirmBtn.BackColor = Color.Lime;
             QuestionInConfirmBtn.Cursor = Cursors.Hand;
             QuestionInConfirmBtn.Font = new Font("Arial Rounded MT Bold", 14F, FontStyle.Regular, GraphicsUnit.Point);
@@ -369,12 +376,24 @@
             QuestionInConfirmBtn.UseVisualStyleBackColor = false;
             QuestionInConfirmBtn.Click += QuestionInConfirmBtn_Click;
             // 
+            // currentUserName
+            // 
+            currentUserName.AutoSize = true;
+            currentUserName.Font = new Font("Arial Rounded MT Bold", 22F, FontStyle.Regular, GraphicsUnit.Point);
+            currentUserName.ForeColor = Color.FromArgb(64, 0, 64);
+            currentUserName.Location = new Point(602, 1);
+            currentUserName.Name = "currentUserName";
+            currentUserName.Size = new Size(172, 51);
+            currentUserName.TabIndex = 23;
+            currentUserName.Text = "chhotu";
+            // 
             // ExaminationForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.InfoText;
+            BackColor = Color.FromArgb(43, 133, 206);
             ClientSize = new Size(1276, 677);
+            Controls.Add(currentUserName);
             Controls.Add(QuestionInConfirmBtn);
             Controls.Add(QuestionInExceptionBtn);
             Controls.Add(QuestionInDoubtBtn);
@@ -431,5 +450,6 @@
         private Button QuestionInDoubtBtn;
         private Button QuestionInExceptionBtn;
         private Button QuestionInConfirmBtn;
+        private Label currentUserName;
     }
 }
