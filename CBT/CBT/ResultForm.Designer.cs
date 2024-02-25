@@ -253,7 +253,7 @@
             Controls.Add(Name_lbl);
             Controls.Add(label1);
             Name = "ResultForm";
-            Text = "ResultForm";
+            Text = "x";
             Load += ResultForm_Load;
             ResumeLayout(false);
             PerformLayout();

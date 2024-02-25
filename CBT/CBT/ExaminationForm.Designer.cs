@@ -381,11 +381,12 @@
             currentUserName.AutoSize = true;
             currentUserName.Font = new Font("Arial Rounded MT Bold", 22F, FontStyle.Regular, GraphicsUnit.Point);
             currentUserName.ForeColor = Color.FromArgb(64, 0, 64);
-            currentUserName.Location = new Point(602, 1);
+            currentUserName.Location = new Point(555, 2);
             currentUserName.Name = "currentUserName";
-            currentUserName.Size = new Size(172, 51);
+            currentUserName.Size = new Size(454, 51);
             currentUserName.TabIndex = 23;
-            currentUserName.Text = "chhotu";
+            currentUserName.Text = "Name of the student";
+            currentUserName.TextAlign = ContentAlignment.TopCenter;
             // 
             // ExaminationForm
             // 

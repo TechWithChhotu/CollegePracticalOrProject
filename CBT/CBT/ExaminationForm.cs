@@ -22,7 +22,7 @@ namespace CBT
             InitializeComponent();
             SetAllQuestions();
             this.userDetails = userDetails;
-            currentUserName.Text=userDetails.Name.ToString();
+            currentUserName.Text = userDetails.Name.ToString();
             this.Text = null;
         }
 

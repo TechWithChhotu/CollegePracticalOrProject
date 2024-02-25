@@ -68,6 +68,7 @@
             label1.Size = new Size(334, 60);
             label1.TabIndex = 1;
             label1.Text = "Examination";
+            label1.Click += label1_Click;
             // 
             // label2
             // 

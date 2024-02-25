@@ -1,0 +1,12 @@
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\bin\Debug\voiceRecognizatonSystems.exe.config
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\bin\Debug\voiceRecognizatonSystems.exe
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\bin\Debug\voiceRecognizatonSystems.pdb
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.csproj.AssemblyReference.cache
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\Interop.SpeechLib.dll
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.csproj.ResolveComReference.cache
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.Form1.resources
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.Properties.Resources.resources
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.csproj.GenerateResource.cache
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.csproj.CoreCompileInputs.cache
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.exe
+C:\Users\chhot\Desktop\CSharp\voiceRecognizatonSystems\voiceRecognizatonSystems\obj\Debug\voiceRecognizatonSystems.pdb
